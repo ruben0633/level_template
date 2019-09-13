@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    justify-content: space-between;     
+    height: 56px;
+    padding: 8px 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5c2be3;
+    z-index: 100;
+    align-items: center;
+}
+.header_menu{
+    display: flex;
+}
+.menu li{
+    list-style-type: none;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.menu{
+    display: flex;
+    align-items: center;
+   
+}
+.levelup-logo{
+    width: 150px;
+    min-width: 150px;
+    height: 30px;
+    background-size: cover;
+}
+.language_container{
+    display: flex;
+}
+.flag{
+    width: 30px;
+    margin-left: 10px;
+    height: 22px;
+}

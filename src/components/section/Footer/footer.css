@@ -1,0 +1,14 @@
+.footer{
+    padding: 8px 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #5c2be3;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text{
+    color: #fff;
+    letter-spacing: 2px;
+}
