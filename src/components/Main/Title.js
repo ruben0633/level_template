@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
+
 import Divider from './Divider';
+import '../../style.css';
 
 export default class Main_Title extends PureComponent{
     constructor(props){
@@ -9,7 +11,7 @@ export default class Main_Title extends PureComponent{
         return(
             <div className='Main-Title'>
                 <div className='title-text'>
-                    <span>{this.props.title}</span>
+                    <span className='title'>Our Team</span>
                 </div>
                 <Divider />
             </div>

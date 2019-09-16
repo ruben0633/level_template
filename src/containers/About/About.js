@@ -6,7 +6,7 @@ export default class About extends PureComponent{
         return(
             <div className='About'>
                 <Helmet>
-                    <title>about</title>
+                    <title>About</title>
                 </Helmet>
                 <h1>hello</h1>
             </div>

@@ -12,23 +12,26 @@ export default class Header extends Component{
     render(){
         return(
             <div className='header'>
-                <div 
+               <Link to='/'>
+               <div 
                     className='levelup-logo'  
                      style={{ backgroundImage: `url(${logo})` }}>      
                 </div>
-                <nav className='header_menu'>
+           
+               </Link>
+                    <nav className='header_menu'>
                         <ul className='menu'>
                             <li>
-                                Students
+                                <Link to='/Students'>Students</Link>
                             </li>
                             <li>
-                                 Courses
+                                <Link to='/Courses'>Courses</Link>
                             </li>
                             <li>
-                              <Link to='/about'>About</Link> 
+                                <Link to='/About' >About</Link> 
                             </li>
                             <li>
-                               Contact Us
+                                <Link to ='/ContactUs'>Contact</Link>
                             </li>
                             <li>
                                 <span className='language_container'>

@@ -20,7 +20,7 @@ const memberData = [
     {
         id: 1, 
         memberImage: `url(${CEO})`,
-        member: 'Levon Azizyan', 
+        name: 'Levon Azizyan', 
         position: 'Ceo', 
         aboutWork: 'Software Engineer at EPAM Systems', 
         icons: [
@@ -33,7 +33,7 @@ const memberData = [
     {
         id: 2, 
         memberImage: `url(${SisAdmin})`,
-        member: 'Armen Zakaryan', 
+        name: 'Armen Zakaryan', 
         position: 'SisAdmin', 
         aboutWork: 'IT Support specialist at Betconstruct', 
         icons: [
@@ -45,7 +45,7 @@ const memberData = [
     {
         id: 3, 
         memberImage: `url(${JavaTest})`,
-        member: 'Karen Mkhitaryan', 
+        name: 'Karen Mkhitaryan', 
         position: 'Java & Automation Testing Mentor', 
         aboutWork: 'Software Test Automation Engineer at EPAM Systems', 
         icons: [
@@ -57,7 +57,7 @@ const memberData = [
     {
         id: 4, 
         memberImage: `url(${JavaMentor})`,
-        member: 'Levon Aloyan', 
+        name: 'Levon Aloyan', 
         position: 'Java Mentor', 
         aboutWork: 'Software Engineer at EPAM Systems', 
         icons: [
@@ -69,7 +69,7 @@ const memberData = [
     {
         id: 5, 
         memberImage: `url(${JsMentor})`,
-        member: 'Karen Sargsyan', 
+        name: 'Karen Sargsyan', 
         position: 'JS Mentor', 
         aboutWork: 'Js Mentor at Level Up IT Center', 
         icons: [
@@ -82,7 +82,7 @@ const memberData = [
     {
         id: 6, 
         memberImage: `url(${NodeJsMentor})`,
-        member: 'Ruben Aprikyan', 
+        name: 'Ruben Aprikyan', 
         position: 'NodeJS Mentor', 
         aboutWork: 'Software Engineer at Brainstorm Technologies', 
         icons: [
@@ -94,7 +94,7 @@ const memberData = [
     {
         id: 7, 
         memberImage: `url(${ManualTestingMentor})`,
-        member: 'Mariam Poghosyan', 
+        name: 'Mariam Poghosyan', 
         position: 'JS Mentor', 
         aboutWork: 'Js Mentor at Level Up IT Center', 
         icons: [
@@ -106,7 +106,7 @@ const memberData = [
     {
         id: 8, 
         memberImage: `url(${ManualTestingMentorA})`,
-        member: 'Astghik Sanasaryan', 
+        name: 'Astghik Sanasaryan', 
         position: 'Manual Testing Mentor', 
         aboutWork: 'Senior Software Testing Engineer at EPAM Systems', 
         icons: [
@@ -118,7 +118,7 @@ const memberData = [
     {
         id: 9, 
         memberImage: `url(${JsMentorM})`,
-        member: 'Mickael Gevorgyan', 
+        name: 'Mickael Gevorgyan', 
         position: 'JS Mentor', 
         aboutWork: 'Js Mentor at Level Up IT Center', 
         icons: [
@@ -130,7 +130,7 @@ const memberData = [
     {
         id: 10, 
         memberImage: `url(${JsMentorA})`,
-        member: ' Arsen Admayan', 
+        name: ' Arsen Admayan', 
         position: ' JS Mentor', 
         aboutWork: 'Software Engineer at EPAM Systems', 
         icons: [
@@ -142,8 +142,6 @@ const memberData = [
     ];
 
     const dataLoader = memberData.map((member)=>{
-        console.log(member.id)
-        console.log(member.memberImage);
         
         return(
             <div className='Members' key={member.id}>
@@ -153,7 +151,7 @@ const memberData = [
                 style={{backgroundImage : member.memberImage}}>
             </div>
             <div className='text-block'>
-                <h3 className='members-name-sname'>{member.member}</h3>
+                <h3 className='members-name-sname'>{member.name}</h3>
                 <p className='position'>{member.position}</p>
                 <p className='about-work'>{member.aboutWork}</p>
                 <Divider />
@@ -168,16 +166,10 @@ const memberData = [
     })
     console.log(dataLoader)
 export default class Members extends PureComponent{
-    constructor(props){
-        super(props);
-        
-    }
-    
- 
     render(){
         return(
           <div className='memberParent'>
-            {dataLoader}
+                {dataLoader}
           </div>
         )
     }
