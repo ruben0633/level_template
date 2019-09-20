@@ -43,3 +43,12 @@
     margin-left: 10px;
     height: 22px;
 }
+.header nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.active{
+    color:#0ee4b1 !important;
+}

@@ -10,6 +10,7 @@ import '../../style.css';
 
 
 export default class Students extends PureComponent{
+
     render(){
         return(
             <div className='Students'>
@@ -20,7 +21,7 @@ export default class Students extends PureComponent{
                     <div 
                         className='background'
                         style={{backgroundImage:`url(${up})`}}>
-
+                    
                     </div>
                     <Title />
                 </div>
