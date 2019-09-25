@@ -15,6 +15,8 @@ import './main.css';
 import facebook from '../../assets/icons/facebook.png';
 import linkedin from '../../assets/icons/linkedin.png';
 import instagram from '../../assets/icons/instagram.png';
+// import Courses from './Cousrese'
+import Title from './Title'
 
 const memberData = [
     {
@@ -141,8 +143,7 @@ const memberData = [
     },
     ];
 
-    const dataLoader = memberData.map((member)=>{
-        
+    const dataLoader = memberData.map((member)=>{    
         return(
             <div className='Members' key={member.id}>
 
@@ -164,13 +165,17 @@ const memberData = [
         </div>
         )
     })
-    console.log(dataLoader)
+
 export default class Members extends PureComponent{
     render(){
         return(
-          <div className='memberParent'>
+          <div>
+              <Title/>
+              <div className='memberParent'>
                 {dataLoader}
           </div>
+          </div>
+          
         )
     }
 }

@@ -113,3 +113,165 @@
      height:520px;
     border: 0px;
 }
+.Courses{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 105;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8,8,8,.63);
+}
+.close{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+}
+.levelup-logo{
+    width: 150px;
+    min-width: 150px;
+    height: 30px;
+    background-size: cover;
+}
+.cours-icon{
+    width: 70px;
+    height: 55px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    cursor: pointer;
+}
+.js-icon{
+    background-image: url("https://levelup.am/static/media/js.064332f3.svg");
+}
+.java-icon{
+    background-image: url("https://levelup.am/static/media/java.41407d86.svg");
+}
+.QA-icon{
+    background-image: url("https://levelup.am/static/media/qa_automation.db320068.svg");
+}
+.node-icon{
+    background-image: url("https://levelup.am/static/media/nodejs.c9873a43.svg");
+}
+.Courses{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.course-for-apply{
+    width: 500px;
+}
+.courses-block{
+    background-color: #5c2be3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    min-height: 350px;
+    justify-content: space-between;
+}
+.logo{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 296px;
+    height: 60px;
+}
+.apply{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 30px;
+}
+.close-button{
+    width: 100%;
+    position: relative;
+    top: -309px;
+    right: 27px;
+    z-index: 10;
+}
+.animation{
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    transition-timing-function: cubic-bezier(.2,1,.9,-0.5);
+  }
+  @keyframes example {
+    from {top: -500px;}
+    to {top: 0px;}
+  }
+.apply-title{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+.ApplyNow{
+    min-width: 500px;
+    min-height: 350px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    margin: 0 auto;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #5c2be3;
+}
+.apply-input{
+    border: 0;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    padding: 0 15px;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    margin-bottom: 5px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.variableForm{
+    justify-content: space-between;
+    padding: 25px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.apply-button{
+    margin-top: 25px;
+    padding: 13px;
+    border-radius: 6px;
+    margin-right: 8px;
+    /* outline: none; */
+    border: none;
+    /* font-weight: bold; */
+    font-weight: 700;
+    color: black;
+    opacity: 0.4;
+    font-family: Open Sans,sans-serif;
+    outline: none;
+}
+.apply-button-parent{
+    display: flex;
+    justify-content: flex-end;
+}
+.logo2{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60px;   
+}

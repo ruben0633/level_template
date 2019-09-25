@@ -258,23 +258,7 @@ const studentsArr = [
         
 ]
 
-// const StudentRender = studentsArr.map((students) =>{
-//     return(
-//         <div className='Members student-card box-shadow' key={students.id}>
 
-//         <div 
-//             className='member-image background-size' 
-//             style={{backgroundImage : students.memberImage}}>
-//                 <div className='hidden-block'> <img src={searchIcon} /></div> 
-//         </div>
-//         <div className='text-block'>
-//             <h3 className='members-name-sname'>{students.name}</h3>
-//             <p className='position'>{students.cours}</p>     
-//         </div>
-//     </div>
-//     )
-// })
- {/* {StudentRender} */}
 export default class StudentsData extends PureComponent{ 
  constructor(props){
      super(props)
@@ -296,28 +280,31 @@ carouselClose = () =>{
         carouselShow:false
     })
 }
+
+generateStudents(){
+        return studentsArr.map((students, index) =>{
+           return(
+               <div className='Members student-card box-shadow' key={students.id}>
+       
+               <div onClick={() => this.carouselView(index) }
+                   className='member-image background-size' 
+                   style={{backgroundImage : `url(${students.memberImage})`}}>
+                       <div className='hidden-block'> <img src={searchIcon} /></div> 
+               </div>
+               <div className='text-block'>
+                   <h3 className='members-name-sname'>{students.name}</h3>
+                   <p className='position'>{students.cours}</p>     
+               </div>
+           </div>
+           )
+       })
+}
+
     render(){
-        
+        console.log(this.props.showIndex)
      return(
          <div className='memberParent'>
-             {
-                 studentsArr.map((students, index) =>{
-                    return(
-                        <div className='Members student-card box-shadow' key={students.id}>
-                
-                        <div onClick={() => this.carouselView(index) }
-                            className='member-image background-size' 
-                            style={{backgroundImage : `url(${students.memberImage})`}}>
-                                <div className='hidden-block'> <img src={searchIcon} /></div> 
-                        </div>
-                        <div className='text-block'>
-                            <h3 className='members-name-sname'>{students.name}</h3>
-                            <p className='position'>{students.cours}</p>     
-                        </div>
-                    </div>
-                    )
-                })
-             }
+             {this.generateStudents()}
              {this.state.carouselShow && <Carousel carouselClose={this.carouselClose} studentsArr={studentsArr} showIndex={this.state.showIndex} />} 
          </div>
      )

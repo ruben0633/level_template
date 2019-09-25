@@ -59,7 +59,7 @@ body{
     background-color: rgba(0,0,0,.46);
     cursor: pointer;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     display: none;
 }
@@ -69,4 +69,32 @@ body{
 }
 .student-card:hover .hidden-block{
     display: flex;
+}
+.a-item-center{
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.content-size{
+    width: 80%;
+    height: 100%;
+}
+.jBetween{
+    justify-content: space-between;
+}
+.jAround{
+    justify-content: space-around;
+}
+.column{
+    flex-direction: column;
+}
+.jCenter{
+    justify-content: center;
+}
+.aCenter{
+    align-items: center;
+}
+.grow{
+    flex-grow: 1;
 }

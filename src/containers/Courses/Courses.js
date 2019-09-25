@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 export default class Courses extends PureComponent{
     render(){
         return(
-            <div className='Courses'>
+            <div className='Courss'>
                 <Helmet>
                     <title>Courses</title>
                 </Helmet>
