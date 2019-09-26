@@ -98,3 +98,6 @@ body{
 .grow{
     flex-grow: 1;
 }
+.margin-auto{
+  margin: 0 auto;
+}
